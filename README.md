@@ -15,11 +15,14 @@ Estrutura do Código
 O código é dividido em métodos que implementam cada algoritmo de substituição de página. Abaixo está um resumo de cada um:
 
 FIFO: Utiliza uma fila (Queue) para armazenar as páginas na ordem em que foram carregadas. Quando a memória está cheia, a primeira página carregada é removida.
-LRU: Usa um LinkedHashMap com ordem de acesso para rastrear a ordem de uso das páginas, facilitando a localização da página menos recentemente usada.
-Ótimo: Usa uma abordagem que prevê o uso futuro das páginas. A página que não será usada por mais tempo é removida da memória.
-Relógio: Implementa uma técnica semelhante ao FIFO, mas com um ponteiro circular e bits de uso para indicar se uma página foi acessada recentemente.
-Como Usar
 
+LRU: Usa um LinkedHashMap com ordem de acesso para rastrear a ordem de uso das páginas, facilitando a localização da página menos recentemente usada.
+
+Ótimo: Usa uma abordagem que prevê o uso futuro das páginas. A página que não será usada por mais tempo é removida da memória.
+
+Relógio: Implementa uma técnica semelhante ao FIFO, mas com um ponteiro circular e bits de uso para indicar se uma página foi acessada recentemente.
+
+Como Usar
 1. Compile e execute o programa.
    ```
    No terminal, vá ao diretorio do programa
