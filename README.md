@@ -21,9 +21,9 @@ Relógio: Implementa uma técnica semelhante ao FIFO, mas com um ponteiro circul
 Como Usar
 
 1. Compile e execute o programa.
-   '''No terminal, vá ao diretorio do programa
+   ```No terminal, vá ao diretorio do programa
    javac PageReplacementSimulator.java
-   java PageReplacementSimulator'''
+   java PageReplacementSimulator```
 3. Insira a sequência de páginas, separadas por espaço.
 4. Insira o número de quadros de memória.
 5. O programa exibirá o número de faltas de página para cada método.
