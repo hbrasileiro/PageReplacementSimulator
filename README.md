@@ -10,17 +10,18 @@ O programa permite que o usuário insira uma sequência de páginas e o número 
 * LRU (Least Recently Used): A página menos recentemente usada é substituída.
 * Ótimo (Optimal): Substitui a página que não será usada por mais tempo no futuro.
 * Relógio (Clock): Usa um ponteiro circular e bits de uso para decidir qual página substituir.
-* Estrutura do Código
+
+# Estrutura do Código
 
 O código é dividido em métodos que implementam cada algoritmo de substituição de página. Abaixo está um resumo de cada um:
 
-FIFO: Utiliza uma fila (Queue) para armazenar as páginas na ordem em que foram carregadas. Quando a memória está cheia, a primeira página carregada é removida.
+* FIFO: Utiliza uma fila (Queue) para armazenar as páginas na ordem em que foram carregadas. Quando a memória está cheia, a primeira página carregada é removida.
 
-LRU: Usa um LinkedHashMap com ordem de acesso para rastrear a ordem de uso das páginas, facilitando a localização da página menos recentemente usada.
+* LRU: Usa um LinkedHashMap com ordem de acesso para rastrear a ordem de uso das páginas, facilitando a localização da página menos recentemente usada.
 
-Ótimo: Usa uma abordagem que prevê o uso futuro das páginas. A página que não será usada por mais tempo é removida da memória.
+* Ótimo: Usa uma abordagem que prevê o uso futuro das páginas. A página que não será usada por mais tempo é removida da memória.
 
-Relógio: Implementa uma técnica semelhante ao FIFO, mas com um ponteiro circular e bits de uso para indicar se uma página foi acessada recentemente.
+* Relógio: Implementa uma técnica semelhante ao FIFO, mas com um ponteiro circular e bits de uso para indicar se uma página foi acessada recentemente.
 
 # Como Usar
 1. Compile e execute o programa.
