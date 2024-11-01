@@ -6,11 +6,11 @@ Este projeto implementa um simulador de substituição de página com quatro alg
 
 O programa permite que o usuário insira uma sequência de páginas e o número de quadros de memória disponíveis. Ele calcula e exibe o número de faltas de página para cada um dos seguintes métodos de substituição de página:
 
-FIFO (First-In, First-Out): O primeiro elemento que entra na memória é o primeiro a sair.
-LRU (Least Recently Used): A página menos recentemente usada é substituída.
-Ótimo (Optimal): Substitui a página que não será usada por mais tempo no futuro.
-Relógio (Clock): Usa um ponteiro circular e bits de uso para decidir qual página substituir.
-Estrutura do Código
+* FIFO (First-In, First-Out): O primeiro elemento que entra na memória é o primeiro a sair.
+* LRU (Least Recently Used): A página menos recentemente usada é substituída.
+* Ótimo (Optimal): Substitui a página que não será usada por mais tempo no futuro.
+* Relógio (Clock): Usa um ponteiro circular e bits de uso para decidir qual página substituir.
+* Estrutura do Código
 
 O código é dividido em métodos que implementam cada algoritmo de substituição de página. Abaixo está um resumo de cada um:
 
@@ -22,7 +22,7 @@ LRU: Usa um LinkedHashMap com ordem de acesso para rastrear a ordem de uso das p
 
 Relógio: Implementa uma técnica semelhante ao FIFO, mas com um ponteiro circular e bits de uso para indicar se uma página foi acessada recentemente.
 
-Como Usar
+# Como Usar
 1. Compile e execute o programa.
    ```
    No terminal, vá ao diretorio do programa
